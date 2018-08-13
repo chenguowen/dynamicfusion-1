@@ -1,4 +1,12 @@
-DynamicFusion
+DynamicFusion 
+
+testtest@hhh:~/DynamicFusion2-mihaibujanca-underdevelopment/build$ ./bin/dynamicfusion ../Depth/
+dir_name=../Depth/
+depths.size()=15
+depths.size()=15
+KinFu2 error: invalid pitch argument    /home/testtest/DynamicFusion2-mihaibujanca-underdevelopment/kfusion/src/device_memory.cpp:231
+
+
 ============
 Implementation of [Newcombe et al. 2015 DynamicFusion paper](http://grail.cs.washington.edu/projects/dynamicfusion/papers/DynamicFusion.pdf).
 
