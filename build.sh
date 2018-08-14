@@ -76,6 +76,6 @@ make -j4
 cd ../../../
 
 mkdir -p build && cd build
-cmake -DOpenCV_DIR=~/opencv/build -DBOOST_ROOT=~/boost_1_64_0/ -DOPENNI_INCLUDE_DIR=/usr/include/ni -DOpenCV_FOUND=TRUE ..
+cmake -DOpenCV_DIR=~/opencv/build -DBOOST_ROOT=~/boost_1_64_0/ -DOPENNI_INCLUDE_DIR=/usr/include/ni -DOpenCV_FOUND=TRUE   -D CUDA_CUDA_LIBRARY="/usr/local/cuda/lib64/stubs/libcuda.so" ..
 make -j4
 cd ..
