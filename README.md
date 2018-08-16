@@ -1,13 +1,13 @@
 # DynamicFusion 
 
-# 第一个问题和第二个问题都被证明是输入数据的错误， Kinect数据是近处的黑色远处是白色的吗？  
+## 第一个问题和第二个问题都被证明是输入数据的错误， Kinect数据是近处的黑色远处是白色的吗？  
 testtest@hhh:~/DynamicFusion2-mihaibujanca-underdevelopment/build$ ./bin/dynamicfusion ../Depth/
 dir_name=../Depth/
 depths.size()=15
 depths.size()=15
 KinFu2 error: invalid pitch argument    /home/testtest/DynamicFusion2-mihaibujanca-underdevelopment/kfusion/src/device_memory.cpp:231
 
-# 第三个问题是由OPT引起的，开发环境是ubuntu16.04,1080TI,cuda8.0, sm 6.1 ：
+## 第三个问题是由OPT引起的，开发环境是ubuntu16.04,1080TI,cuda8.0, sm 6.1 ：
 
 [string "<string>"]:137: cuInit: cuda reported error -1
 stack traceback:
