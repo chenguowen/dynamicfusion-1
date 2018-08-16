@@ -23,6 +23,12 @@ dynamicfusion: /home/testtest/DynamicFusion2-M/dynamicfusion-1/deps/Opt/examples
 Aborted (core dumped)
 
 
+目前old和new服务器都测试了 Opt的sanmple跑不通，terra最新版git下载的自己编译不通过。 
+所以dynamic fusion都不行。 
+但是在docker环境中，一个自带例子的可以跑到marchingCube，单独环境的docker出错vtk，说没法渲染/ 
+
+
+
 
 
 
