@@ -28,6 +28,7 @@ Aborted (core dumped)
 但是在docker环境中，一个自带例子的可以跑到marchingCube，单独环境的docker出错vtk，说没法渲染/ 
 
 
+旧服务器安装7.5失败 。 
 
 
 
