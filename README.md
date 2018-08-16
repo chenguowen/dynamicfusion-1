@@ -1,10 +1,29 @@
-DynamicFusion 
+# DynamicFusion 
 
+# 第一个问题和第二个问题都被证明是输入数据的错误， Kinect数据是近处的黑色远处是白色的吗？  
 testtest@hhh:~/DynamicFusion2-mihaibujanca-underdevelopment/build$ ./bin/dynamicfusion ../Depth/
 dir_name=../Depth/
 depths.size()=15
 depths.size()=15
 KinFu2 error: invalid pitch argument    /home/testtest/DynamicFusion2-mihaibujanca-underdevelopment/kfusion/src/device_memory.cpp:231
+
+# 第三个问题是由OPT引起的，开发环境是ubuntu16.04,1080TI,cuda8.0, sm 6.1 ：
+
+[string "<string>"]:137: cuInit: cuda reported error -1
+stack traceback:
+        [C]: in function 'error'
+        [string "<string>"]:137: in function 'localversion'
+        [string "<string>"]:236: in function 'cudacompile'
+        ...DynamicFusion2-M/dynamicfusion-1/deps/Opt/API/src/util.t:874: in function 'makeGPUFunctions'
+        .../dynamicfusion-1/deps/Opt/API/src/solverGPUGaussNewton.t:751: in function 'compilePlan'
+        ...st/DynamicFusion2-M/dynamicfusion-1/deps/Opt/API/src/o.t:870: in function <...st/DynamicFusion2-M/dynamicfusion-1/deps/Opt/API/src/o.t:862>
+        [C]: in function 'xpcall'
+        ...st/DynamicFusion2-M/dynamicfusion-1/deps/Opt/API/src/o.t:862: in function <...st/DynamicFusion2-M/dynamicfusion-1/deps/Opt/API/src/o.t:861>
+dynamicfusion: /home/testtest/DynamicFusion2-M/dynamicfusion-1/deps/Opt/examples/shared/OptSolver.h:56: OptSolver::OptSolver(const std::vector<unsigned int>&, const string&, const string&, bool): Assertion `m_plan' failed.
+Aborted (core dumped)
+
+
+
 
 
 ============
